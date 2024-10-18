@@ -1,1 +1,44 @@
 /* Ini CSS */
+nav {
+    display: flex;
+}
+
+a {
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-icon {
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/70);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-banner {
+    height: 250px;
+    background-image: url(https://picsum.photos/1000);
+    background-size: cover;
+    background-position: center;
+}
+
+.message-contianer {
+    display: flex;
+}
+
+footer div {
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+}
