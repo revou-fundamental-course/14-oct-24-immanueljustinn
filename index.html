@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mini-Project</title>
     <link rel="stylesheet" href="css\styles.css">
+    <link rel="shortcut icon" href="assets\logo_mcd.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a4f34d6c7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,8 +34,23 @@
 
             <article>
                 <!-- photo banner -->
-                <div class="photo-banner">
-                    <img src="assets\rIfkVUiRlgc5hJjCYBLH.jpg" alt="penawaran-menu">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel">
+                        <div class="photo-banner">
+                            <img src="assets\rIfkVUiRlgc5hJjCYBLH.jpg" alt="penawaran-menu">
+                            <img src="assets\9DEPHE3jK0152nW0Tn8k.jpg" alt="penawaran-menu">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- membuat next dan prev button -->
+                <div class="nav-buttons">
+                    <button class="prev" id="prevBtn">
+                        <i class="fa-solid fa-arrow-right fa-flip-horizontal"></i>
+                    </button>
+                    <button class="next" id="nextBtn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
                 </div>
             </article>
         </section>
@@ -51,7 +67,11 @@
                     <div class="promo">
                         <img src="assets\E3y2twNqXaaZtTFrASMe.jpg" alt="promo-pertama" class="picture-promo">
                         <div class="text-promo">
-                            <h5>Promo Spesial McDelivery</h5>
+                            <h5> 
+                                <a href="https://www.mcdonalds.co.id/promo/promo-spesial-mcdelivery-oktober" target="_blank">
+                                    Promo Spesial McDelivery
+                                </a>
+                            </h5>
                             <div>
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Berlaku 1-30 Oktober 2024</p>
@@ -63,7 +83,11 @@
                     <div class="promo">
                         <img src="assets\hOFqH69lix0NWfcpwQCq.jpg" alt="promo-kedua" class="picture-promo">
                         <div class="text-promo">
-                            <h5>Jajan Hemat dengan Permata Kartu Kredit Diskon 15%</h5>
+                            <h5>
+                                <a href="https://www.mcdonalds.co.id/promo/jajan-hemat-dengan-permata-kartu-kredit-diskon-15" target="_blank">
+                                    Jajan Hemat dengan Permata Kartu Kredit Diskon 15%
+                                </a>
+                            </h5>
                             <div>
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Berlaku hingga 31 Mei 2025</p>
@@ -75,7 +99,11 @@
                     <div class="promo">
                         <img src="assets\NLXdVfg1kxs7utsUqJUc.jpg" alt="promo-ketiga" class="picture-promo">
                         <div class="text-promo">
-                            <h5>Paket HeBat (Hemat Banget)</h5>
+                            <h5>
+                                <a href="https://www.mcdonalds.co.id/promo/jajan-hemat-dengan-permata-kartu-kredit-diskon-15" target="_blank">
+                                    Paket HeBat (Hemat Banget)
+                                </a>
+                            </h5>
                             <div>
                                 <i class="fa-solid fa-calendar-days"></i>
                                 <p>Berlaku hingga 31 Desember 2024</p>
@@ -89,7 +117,7 @@
         <!-- section profile -->
         <section id="section-profile">
             <header>
-                <h1>Portfolio</h1>
+                <h1>About Us</h1>
             </header>
 
             <article>
@@ -115,5 +143,8 @@
     <footer>
         <div>Made by Justin</div>
     </footer>
+
+    <!-- menghubungkan file javascript -->
+    <script src="js\script.js"></script>
 </body>
 </html>
