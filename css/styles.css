@@ -1,4 +1,28 @@
 /* Ini CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px 20px 50px;
+    position: sticky;
+    top: 20px;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 70px;
+}
+
+.logo-icon > img {
+    width: auto;
+    height: 50px;
+}
+
 nav {
     display: flex;
 }
@@ -12,35 +36,61 @@ a {
     border-radius: 7px;
 }
 
-.logo-icon {
-    height: 50px;
-    width: 70px;
-    background-image: url(assets\logo_mcd.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.photo-banner {
-    height: 250px;
-    background-image: url(https://picsum.photos/1000);
-    background-size: cover;
-    background-position: center;
-}
-
-.message-contianer {
-    display: flex;
-}
-
-footer div {
+#section-home > header > h1 {
     text-align: center;
-    font-family: cursive;
-    font-size: small;
+    margin-bottom: 20px;
+}
+
+.photo-banner > img {
+    width: 100%;
+    height: auto;
+}
+
+#section-promo > header > h1 {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+/* mengatur letak promo */
+#box-promo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mengatur size promo*/
+.promo {
+    width: 500px;
+    height: 350px;
+    margin-right: 15px;
+}
+
+/* atur foto di bagian promo */
+.promo > .picture-promo {
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+/* mengatur text untuk promo */
+.text-promo {
+    margin-left: 10px;
+}
+
+.text-promo > h5 {
+    font-size: 22px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.text-promo > div {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-promo > div > p {
+    margin-left: 10px;
+    margin-top: 0;
 }
