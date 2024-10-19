@@ -8,22 +8,24 @@ a {
     padding: 8px;
     text-decoration: none;
     color: black;
+    margin-right: 7px;
+    border-radius: 7px;
 }
 
 .logo-icon {
-    border: 1px solid;
     height: 50px;
-    width: 50px;
-    background-image: url(https://picsum.photos/70);
+    width: 70px;
+    background-image: url(assets\logo_mcd.png);
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
 }
 
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .photo-banner {
