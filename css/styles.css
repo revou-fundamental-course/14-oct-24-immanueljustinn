@@ -168,3 +168,26 @@ a {
 #section-profile > header > h1 {
     text-align: center;
 }
+
+#section-profile > article > .article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+#section-profile > article > .article > img {
+    width: 560px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#section-profile > article > .article > .text-article {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 450px;
+    height: 405px;
+    justify-content: space-between;
+    font-size: 20px;
+}
