@@ -4,47 +4,56 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Outfit';
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 50px 20px 50px;
-    position: sticky;
-    top: 20px;
-    z-index: 1000;
+    width: 100%;
+    height: 90px;
+    background-color: #FFFFFF;
 }
 
-.logo-icon {
+.main-header .logo-icon {
     height: 50px;
     width: 70px;
+    margin-left: 70px;
 }
 
-.logo-icon > img {
+.main-header .logo-icon img {
     width: auto;
     height: 50px;
 }
 
-nav {
+.main-header nav {
     display: flex;
+    margin-right: 70px;
 }
 
-a {
+.main-header nav a {
     border: 1px solid;
     padding: 8px;
     text-decoration: none;
     color: black;
     margin-right: 7px;
     border-radius: 7px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #E72929;
 }
 
 /* css section home */
-#section-home > header > h1 {
+#section-home header h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 36px;
 }
 
 /* mengatur agar gambar bisa digeser */
-#section-home > article > .carousel-container {
+#section-home article .carousel-container {
     width: 100%;
     overflow: hidden;
     margin: auto;
@@ -70,7 +79,7 @@ a {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 50%;
+    top: 56.5%;
     width: 100%;
     transform: translateY(-50%); /* menempatkan tombol di tengah */
     pointer-events: none; /* membuat klik hanya mengenai tombol saja, bukan elemn lain */
@@ -111,6 +120,7 @@ a {
 #section-promo > header > h1 {
     margin: 36px 0;
     text-align: center;
+    font-size: 28px;
 }
 
 /* mengatur letak promo */
@@ -119,6 +129,7 @@ a {
     align-content: center;
     justify-content: center;
     align-items: center;
+    margin: 0 50px;
 }
 
 /* mengatur size promo*/
@@ -146,21 +157,20 @@ a {
     margin-bottom: 17px;
 }
 
+.text-promo h5 a {
+    text-decoration: none;
+    color: black;
+}
+
 .text-promo > div {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    font-size: 16px;
 }
 
 .text-promo > div > p {
     margin-left: 10px;
     margin-top: 0;
-}
-
-/* membuat hover text */
-.text-promo > h5 > a {
-    border: none;
-    padding: 0;
-    margin: 0;
 }
 
 /* css section profile */
@@ -170,11 +180,12 @@ a {
 
 #section-profile > header > h1 {
     text-align: center;
+    font-size: 28px;
 }
 
 #section-profile > article > .article {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     margin-top: 36px;
 }
@@ -190,14 +201,15 @@ a {
     flex-direction: column;
     text-align: justify;
     width: 450px;
-    height: 405px;
+    height: 400px;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* css section message us */
 #section-message-us > header > h1 {
     text-align: center;
+    font-size: 28px;
 }
 
 #section-message-us > .message-container {
@@ -221,6 +233,10 @@ a {
 .form-container > .form-group {
     display: flex;
     align-items: center;
+}
+
+.form-container #submit {
+    width: 300px;
 }
 
 .form-group label {
