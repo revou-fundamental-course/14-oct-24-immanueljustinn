@@ -25,11 +25,6 @@ function prevImage() {
     updateCarousel();
 }
 
-// fungsi untuk menyembunyikan tombol setelah diklik
-function hideButton(button) {
-    button.classList.add('hidden'); //menambahkan class 'hidden' untuk menyembunyikan tombol
-}
-
 // fungsi untuk memulai auto slide
 function startAutoSlide() {
     autoSlideInterval = setInterval(nextImage, 5000); //ganti gambar setelah 5 detik
@@ -39,14 +34,12 @@ function startAutoSlide() {
 document.getElementById('nextBtn').addEventListener('click', function() {
     clearInterval(autoSlideInterval); //menghentikan auto-slide ketika ditekan
     nextImage();
-    hideButton(this);
     startAutoSlide();
 });
 
 document.getElementById('prevBtn').addEventListener('click', function() {
     clearInterval(autoSlideInterval);
     prevImage();
-    hideButton(this)
     startAutoSlide();
 });
 

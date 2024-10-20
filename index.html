@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini-Project</title>
     <link rel="stylesheet" href="css\styles.css">
+    <script src="js\script.js" defer></script>
     <link rel="shortcut icon" href="assets\logo_mcd.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a4f34d6c7a.js" crossorigin="anonymous"></script>
 </head>
@@ -142,19 +143,45 @@
             </header>
 
             <div class="message-container">
-                <form action=""></form>
-
-                <div></div>
+                <div class="form-container">
+                    <form action="#" method="post"></form>
+                    <div class="form-group">
+                        <label for="name">Nama :</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="tglLahir">Tanggal Lahir :</label>
+                        <input type="date" id="tglLahir">
+                    </div>
+                    <div class="form-group" id="form-gender">
+                        <label>Jenis Kelamin :</label>
+                        <div class="radio-group">
+                            <label for="laki-laki">
+                                <input type="radio" name="gender" id="laki-laki" value="laki-laki">
+                                Laki-Laki
+                            </label>
+                            <label for="perempuan">
+                                <input type="radio" name="gender" id="perempuan" value="perempuan">
+                                Perempuan
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan :</label>
+                        <input type="text" id="pesan">
+                    </div>
+                </div>
+    
+                <div class="fill-text"></div>
             </div>
         </section>
     </main>
 
-    <!-- Copyright -->
     <footer>
-        <div>Made by Justin</div>
+        <h3>&copy; Immanuel Justin Elnathan</h3>
     </footer>
 
     <!-- menghubungkan file javascript -->
-    <script src="js\script.js"></script>
+    
 </body>
 </html>
