@@ -249,7 +249,6 @@ body {
 
 .form-container > .form-group {
     display: inline-flex;
-    align-items: baseline;
     margin-bottom: 7px;
 }
 
@@ -278,13 +277,15 @@ body {
 
 .form-group input {
     width: 220px;
+    padding: 2px 0 2px 4px;
+    font-family: 'Outfit';
 }
 
 #form-gender .radio-group label {
     display: flex;
     align-items: baseline;
     width: max-content;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 20px
 }
 
@@ -299,7 +300,11 @@ body {
 }
 
 .form-group #pesan {
+    width: 220px;
     height: 60px;
+    resize: none;
+    font-family: 'Outfit';
+    padding: 2px 0 2px 4px;
 }
 
 /* css footer */
