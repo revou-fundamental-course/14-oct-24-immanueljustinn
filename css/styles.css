@@ -220,7 +220,7 @@ body {
 }
 
 #section-message-us > .message-container > .form-container {
-    width: 300px;
+    width: min-content;
     margin-right: 85px;
 }
 
@@ -231,21 +231,58 @@ body {
 }
 
 .form-container > .form-group {
-    display: flex;
+    display: inline-flex;
+    align-items: baseline;
+    margin-bottom: 7px;
+}
+
+.form-container #form-gender .radio-group {
+    display: inline-flex;
     align-items: center;
 }
 
 .form-container #submit {
-    width: 300px;
+    font-family: 'Outfit';
+    width: -webkit-fill-available;;
+}
+
+.form-group .titik-dua {
+    margin-right: 10px;
 }
 
 .form-group label {
-    margin-right: 15px;
-    width: 90px;
+    width: 120px;
+}
+
+.form-group .label {
+    display: flex;
+    justify-content: space-between;
 }
 
 .form-group input {
-    width: 250px;
+    width: 220px;
+}
+
+#form-gender .radio-group label {
+    display: flex;
+    align-items: baseline;
+    width: max-content;
+    font-size: 12px;
+    margin-right: 20px
+}
+
+#form-gender .radio-group input {
+    width: 10px;
+    height: 8px;
+    margin-right: 4px;
+}
+
+.form-group #text-pesan {
+    align-items: flex-start;
+}
+
+.form-group #pesan {
+    height: 60px;
 }
 
 /* css footer */

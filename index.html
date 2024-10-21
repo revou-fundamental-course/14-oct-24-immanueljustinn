@@ -149,15 +149,21 @@
                 <div class="form-container">
                     <form action="#" method="post"></form>
                     <div class="form-group">
-                        <label for="name">Nama :</label>
+                        <label for="name" class="label">
+                            Nama <span class="titik-dua">:</span>
+                        </label>
                         <input type="text" id="name">
                     </div>
                     <div class="form-group">
-                        <label for="tglLahir">Tanggal Lahir :</label>
+                        <label for="tglLahir" class="label">
+                            Tanggal Lahir <span class="titik-dua">:</span>
+                        </label>
                         <input type="date" id="tglLahir">
                     </div>
                     <div class="form-group" id="form-gender">
-                        <label>Jenis Kelamin :</label>
+                        <label class="label">
+                            Jenis Kelamin <span class="titik-dua">:</span>
+                        </label>
                         <div class="radio-group">
                             <label for="laki-laki">
                                 <input type="radio" name="gender" id="laki-laki" value="laki-laki">
@@ -169,8 +175,10 @@
                             </label>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="pesan">Pesan :</label>
+                    <div class="form-group" id="text-pesan">
+                        <label for="pesan" class="label">
+                            Pesan <span class="titik-dua">:</span>
+                        </label>
                         <input type="text" id="pesan">
                     </div>
                     <input type="submit" id="submit">
