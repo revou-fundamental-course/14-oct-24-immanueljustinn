@@ -46,10 +46,27 @@ body {
 }
 
 /* css section home */
+#section-home header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #section-home header h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     font-size: 36px;
+}
+
+#section-home header button {
+    padding: 6px;
+    margin-bottom: 26px;
+    font-size: 18px;
+    font-family: 'Outfit';
+    border: none;
+    color: #ffffff;
+    background-color: #E72929;
+    border-radius: 7px;
 }
 
 /* mengatur agar gambar bisa digeser */
