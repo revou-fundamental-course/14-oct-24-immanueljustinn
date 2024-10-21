@@ -1,4 +1,12 @@
 // Ini JavaScript
+function replaceName() {
+    let name = prompt("Halo siapakah nama Anda?", "");
+    document.getElementById("user-name").innerHTML = name;
+}
+
+document.getElementById('change-name').addEventListener("click", function() {
+    replaceName();
+})
 
 // js carousel 
 const carousel = document.getElementById('carousel');
